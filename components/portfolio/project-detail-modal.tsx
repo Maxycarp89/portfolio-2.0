@@ -5,6 +5,7 @@ import { X, ChevronLeft, ChevronRight, ExternalLink, Github, Calendar, Users, La
 import { useState } from "react";
 
 export interface ProjectDetail {
+  logicBadge: any;
   id: number;
   title: string;
   shortDescription: string;
@@ -185,7 +186,7 @@ export function ProjectDetailModal({ project, isOpen, onClose }: ProjectDetailMo
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                   {project.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-primary mt-2 flex-shrink-0" />
+                      <span className="w-2 h-2 bg-primary mt-2 shrink-0" />
                       <span className="text-sm text-muted-foreground">{feature}</span>
                     </li>
                   ))}

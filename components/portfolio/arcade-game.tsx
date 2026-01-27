@@ -295,7 +295,7 @@ function SnakeGame() {
       </div>
 
       {/* Mobile Controls */}
-      <div className="mt-4 grid grid-cols-3 gap-2 max-w-[150px] mx-auto lg:hidden">
+      <div className="mt-4 grid grid-cols-3 gap-2 max-w-37.5 mx-auto lg:hidden">
         <div />
         <MobileButton direction="UP" onClick={() => {
           if (directionRef.current !== "DOWN") {

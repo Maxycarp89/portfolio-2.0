@@ -69,7 +69,7 @@ export function TouchEffects() {
   if (!isMobile) return null;
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-[9999]">
+    <div className="fixed inset-0 pointer-events-none z-9999">
       <AnimatePresence>
         {particles.map((particle) => (
           <motion.div

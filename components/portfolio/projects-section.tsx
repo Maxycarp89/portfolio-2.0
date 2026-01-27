@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
 import { Zap, Search, Menu, Eye, Download, MessageCircle, Plus } from "lucide-react";
 import { useState } from "react";
 import { ProjectDetailModal, ProjectDetail } from "./project-detail-modal";
@@ -37,6 +38,7 @@ const projects: ProjectDetail[] = [
       status: "Running on 5000",
     },
     badge: { label: "UI/UX", color: "bg-[#D8B4FE]" },
+    logicBadge: undefined
   },
   {
     id: 2,
@@ -68,6 +70,7 @@ const projects: ProjectDetail[] = [
       command: "$ worker run --queue=high",
     },
     badge: { label: "INTERFACE", color: "bg-secondary" },
+    logicBadge: undefined
   },
   {
     id: 3,
@@ -100,6 +103,7 @@ const projects: ProjectDetail[] = [
       status: "Connected to markets",
     },
     badge: { label: "LOGIC", color: "bg-primary" },
+    logicBadge: undefined
   },
 ];
 
@@ -127,13 +131,13 @@ export function ProjectsSection() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, scale: 0.9, y: 30 },
     visible: {
       opacity: 1,
       scale: 1,
       y: 0,
-      transition: { type: "spring", stiffness: 100 },
+      transition: { type: "spring" as const, stiffness: 100 },
     },
   };
 
@@ -144,7 +148,7 @@ export function ProjectsSection() {
         isOpen={isModalOpen} 
         onClose={closeProjectDetail} 
       />
-      <section id="projects" className="min-h-screen px-4 py-12 pb-24 lg:px-8">
+      <section id="projects" className="min-h-screen px-4 py-4 pb-24 lg:px-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
@@ -253,7 +257,7 @@ export function ProjectsSection() {
                   </div>
                   <button
                     onClick={() => openProjectDetail(project)}
-                    className="bg-foreground text-card px-4 py-2 border-2 border-foreground shadow-brutal-sm font-bold text-xs flex items-center gap-2 hover-brutal flex-shrink-0"
+                    className="bg-foreground text-card px-4 py-2 border-2 border-foreground shadow-brutal-sm font-bold text-xs flex items-center gap-2 hover-brutal shrink-0"
                   >
                     <Eye className="w-4 h-4" />
                     VER DETALLE

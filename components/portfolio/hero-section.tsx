@@ -206,7 +206,7 @@ export function HeroSection() {
         </div>
 
         {/* Right Column - Interactive Cards & Decorative Elements (Desktop) */}
-        <div className="relative lg:h-[600px] hidden lg:block" style={{ perspective: "1000px" }}>
+        <div className="relative lg:h-150 hidden lg:block" style={{ perspective: "1000px" }}>
           {/* Parallax Layer 1 - Back */}
           <motion.div 
             style={mounted ? { y: y1, opacity } : {}}
@@ -325,16 +325,7 @@ export function HeroSection() {
         </div>
       </motion.div>
 
-      {/* Floating Work Button - Mobile only */}
-      <motion.button
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1, type: "spring", stiffness: 200 }}
-        className="fixed bottom-24 right-4 w-16 h-16 bg-accent text-accent-foreground rounded-full border-2 border-foreground shadow-brutal flex flex-col items-center justify-center animate-bounce-subtle z-40 lg:hidden"
-      >
-        <Briefcase className="w-5 h-5" />
-        <span className="text-[10px] font-bold mt-0.5">WORK</span>
-      </motion.button>
+     
     </section>
   );
 }
