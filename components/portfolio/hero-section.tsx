@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react"
-
+import React from "react";
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import { Briefcase, Box, Code2, Sparkles, Zap, Terminal } from "lucide-react";
 import { useRef, useEffect, useState } from "react";

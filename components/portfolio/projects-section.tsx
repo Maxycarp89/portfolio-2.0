@@ -26,9 +26,9 @@ const projects: ProjectDetail[] = [
       "Optimizacion SEO y Core Web Vitals"
     ],
     images: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
+      "/mockup-bikes.png",
+      "/landing-motos.png",
+      "/landing-motos2.png"
     ],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
@@ -59,9 +59,10 @@ const projects: ProjectDetail[] = [
       "Arquitectura escalable con microservicios"
     ],
     images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+      "/mockup-terminal.png",
+      "/terminal-react.png",
+      "/terminal-lab.png",
+      "/terminal-lab1.png"
     ],
     liveUrl: "https://example.com",
     terminal: {
@@ -91,9 +92,9 @@ const projects: ProjectDetail[] = [
       "Escalado horizontal automatico"
     ],
     images: [
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=600&fit=crop"
+      "totem.png",
+      "product-detail.png",
+      "totem-financials.png"
     ],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
@@ -285,7 +286,7 @@ export function ProjectsSection() {
           
           {/* WhatsApp Button */}
           <motion.a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/+543816262536"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0 }}
