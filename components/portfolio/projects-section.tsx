@@ -33,7 +33,7 @@ const projects: ProjectDetail[] = [
     liveUrl: "https://turnos-bikes.yuhmak.com/",
     githubUrl: "https://github.com/Maxycarp89",
     terminal: {
-      path: "~/auth-service",
+      path: "~/yuhmak-bikes",
       stack: "API: Node/Express + SAP",
       status: "Running on 5000",
     },
@@ -42,7 +42,7 @@ const projects: ProjectDetail[] = [
   },
   {
     id: 2,
-    title: "DATA VIZ DASHBOARD",
+    title: "React Terminal Labs",
     shortDescription: "FRONTEND: REACT, D3.JS, GSAP",
     fullDescription: "Dashboard interactivo de visualizacion de datos para el sector fintech. Muestra metricas en tiempo real con graficos animados, permite exportar reportes en multiples formatos, y cuenta con un sistema de alertas configurables. El backend procesa millones de transacciones diarias.",
     role: "Fullstack Developer",
@@ -64,9 +64,9 @@ const projects: ProjectDetail[] = [
       "/terminal-lab.png",
       "/terminal-lab1.png"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://react-terminal-lab.vercel.app/",
     terminal: {
-      path: "~/analytics-engine",
+      path: "~/react-terminal-labs",
       stack: "Backend: Python, FastAPI, Postgres",
       command: "$ worker run --queue=high",
     },
