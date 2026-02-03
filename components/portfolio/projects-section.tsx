@@ -9,18 +9,18 @@ import { ProjectDetailModal, ProjectDetail } from "./project-detail-modal";
 const projects: ProjectDetail[] = [
   {
     id: 1,
-    title: "NEON MARKETPLACE",
-    shortDescription: "FRONTEND: NEXT.JS 14, TAILWIND, MOTION",
-    fullDescription: "Una plataforma de e-commerce moderna construida con las ultimas tecnologias. El proyecto incluye autenticacion de usuarios, carrito de compras persistente, pagos con Stripe, panel de administracion para vendedores, y un sistema de busqueda avanzado con filtros dinamicos. La arquitectura esta optimizada para SEO y rendimiento.",
-    role: "Lead Frontend Developer",
-    duration: "4 months",
-    team: "3 developers + 1 designer",
+    title: "YUHMAK BIKES",
+    shortDescription: "FRONTEND: REACT, TAILWIND, MOTION",
+    fullDescription: "Una plataforma de turnos moderna construida con las ultimas tecnologias. El proyecto incluye autenticacion de usuarios, selección de sucursales, panel de administracion para vendedores, panel de adiministración para gerentes y un sistema de busqueda avanzado con filtros dinamicos. La arquitectura esta optimizada para SEO y rendimiento.",
+    role: "Fullstack Developer",
+    duration: "2 months",
+    team: "1 developers + 1 designer",
     tags: ["E-COMMERCE", "FULLSTACK"],
-    techStack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion", "Prisma", "PostgreSQL", "Stripe", "Redis"],
+    techStack: ["React","Tailwind CSS", "Framer Motion", "Node.js","Express", "SAP"],
     features: [
-      "Autenticacion con OAuth y magic links",
-      "Carrito de compras con persistencia",
-      "Sistema de pagos con Stripe",
+      "Autenticacion con OAuth",
+      "Seleccion de sucursales",
+      "Dashboard de usuarios",
       "Panel de administracion completo",
       "Busqueda con filtros avanzados",
       "Optimizacion SEO y Core Web Vitals"
@@ -30,11 +30,11 @@ const projects: ProjectDetail[] = [
       "/landing-motos.png",
       "/landing-motos2.png"
     ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    liveUrl: "https://turnos-bikes.yuhmak.com/",
+    githubUrl: "https://github.com/Maxycarp89",
     terminal: {
       path: "~/auth-service",
-      stack: "API: Node/Express + Redis",
+      stack: "API: Node/Express + SAP",
       status: "Running on 5000",
     },
     badge: { label: "UI/UX", color: "bg-[#D8B4FE]" },
