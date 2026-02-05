@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter, Send, ArrowUpRight } from "lucide-react";
+import { Mail, Github, Linkedin, Instagram, Send, ArrowUpRight } from "lucide-react";
 
 export function ContactSection() {
   const containerVariants = {
@@ -24,9 +24,9 @@ export function ContactSection() {
   };
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
+    { icon: Github, label: "GitHub", href: "https://github.com/Maxycarp89" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/maximiliano-costilla/" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/maxycostilla89" },
   ];
 
   return (
